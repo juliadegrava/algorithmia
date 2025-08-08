@@ -175,3 +175,20 @@ if (vidaAtual <= 100) {
     console.log("📜 === CONTINUAÇÃO DA JORNADA DE " + nomePersonagem + " ===");
 console.log("");
 
+// PRÓLOGO - Conexão com o Nível 1
+console.log("Após os eventos do " + localAtual + ", nosso herói " + nomePersonagem);
+console.log("da classe " + classe + " se depara com um novo desafio...");
+console.log("");
+
+// EPÍLOGO - Resultado final
+if (poderCacadores <= 0) {
+    console.log("🎉 VITÓRIA ÉPICA! " + nomePersonagem + " triunfa!");
+    experiencia += 100;
+    combatesVencidos++;
+    console.log("A lenda de " + nomePersonagem + " cresce...");
+} else {
+    console.log("⚔️ A batalha foi árdua, mas " + nomePersonagem + " sobrevive para lutar outro dia!");
+}
+
+console.log("");
+console.log("🏁 FIM DO CAPÍTULO - Aguarde o próximo nível da aventura!");
