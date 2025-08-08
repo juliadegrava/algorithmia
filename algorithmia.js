@@ -148,3 +148,30 @@ if (xpLevel2 >= 100) {
 }
 console.log("");
 console.log("");
+
+// CAPÍTULO 3: A Batalha Decisiva
+console.log("⚔️ CAPÍTULO 3: A Batalha Decisiva");
+let poderCacadores = 30;
+
+// Sistema de combate inteligente baseado na situação
+if (vidaAtual <= 100) {
+    console.log("🆘 Com pouca vida, " + nomePersonagem + " usa uma tática desesperada!");
+    console.log("Ataque final com toda a força restante!");
+    poderCacadores -= (forca * 2);
+} else if (manaAtual >= 30 && classe === "Mago") {
+    console.log("✨ " + nomePersonagem + " canaliza todo seu poder mágico!");
+    console.log("Magia devastadora!");
+    poderCacadores -= (forca + 20);
+    manaAtual -= 30;
+} else if (agilidade >= 15) {
+    console.log("🏃‍♂️ Com grande agilidade, executa um ataque certeiro!");
+    poderCacadores -= forca;
+} else {
+    console.log("🛡️ Luta defensiva e calculada!");
+    poderCacadores -= (forca / 2);
+    vidaAtual += 10;
+}
+
+    console.log("📜 === CONTINUAÇÃO DA JORNADA DE " + nomePersonagem + " ===");
+console.log("");
+
