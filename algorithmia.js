@@ -23,7 +23,7 @@ console.log("");
 
 const NOME_ARMA = "Shadow Scepter";
 let DANO_BASE = 70;
-const NOME_ARMADURA = "Shadarmow";
+const NOME_ARMADURA = "Shawmor";
 const DEFESA_BASE = 40;
 console.log(`Arma: ${NOME_ARMA}, dano: ${DANO_BASE}`);
 console.log(`Armadura: ${NOME_ARMADURA}, defesa: ${DEFESA_BASE}`);
@@ -192,3 +192,20 @@ if (poderCacadores <= 0) {
 
 console.log("");
 console.log("🏁 FIM DO CAPÍTULO - Aguarde o próximo nível da aventura!");
+console.log("");
+console.log("");
+
+// === CONTINUAÇÃO DA SAGA ÉPICA - NÍVEL 3 ===
+
+// === NOVOS ELEMENTOS PARA O CASTELO DOS ARRAYS ===
+// Inventário mágico - primeira coleção arcana
+
+let inventario = ["Poção de Vida", "Shadow Scepter", "Armadura Shawmor"];
+let aliados = ["Samurai Hiro", "Ninja Slade", "Espírito Guardião Freya"];
+let inimigosEncontrados = ["Troll Caçador", "Goblin Berserker", "Orc de Gelo"];
+let salasCastelo = ["Biblioteca Arcana", "Armadilha de Cristal", "Torre do Tempo"];
+let tesouroColetado = [];
+
+console.log("🏰 === " + nomePersonagem + " ADENTRA O CASTELO DOS ARRAYS ===");
+console.log("Após as vitórias dos níveis anteriores, nosso herói chegou ao castelo lendário...");
+console.log("Inventário inicial: " + inventario.length + " itens mágicos");
