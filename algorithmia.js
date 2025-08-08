@@ -91,6 +91,8 @@ let combatesVencidos = 0;
 
 let localAtual = "Viridara";
 let missaoAtual = "Vingar a morte de seus pais";
+console.log("");
+console.log("");
 
 // CAPÍTULO 1: Condicionais Simples na narrativa
 console.log("🌅 CAPÍTULO 1: O Aviso dos Anciões");
@@ -115,3 +117,34 @@ if (ouro >= 100) {
 if (classe === "Druida") {
     console.log("🔮 A energia mágica da natureza flui através de suas veias...");
 }
+console.log("");
+console.log("");
+
+// CAPÍTULO 2: Escolha Estratégica
+console.log("🛡️ CAPÍTULO 2: A Encruzilhada do Destino");
+
+// Escolha baseada em recursos
+if (ouro >= 50) {
+    console.log("💎" + nomePersonagem + " Tem dinehiro demais e deverá comprar equipamentos melhores!");
+    forca += 5;
+    defesa += 3;
+    ouro -= 50;
+    console.log("Sua força e defesa aumentaram! Ouro restante: " + ouro);
+} else {
+    console.log("💸 "+ nomePersonagem + " Não tem ouro o suficiente e deverá confiar apenas em suas habilidades!");
+    console.log("A adversidade fortalece o espírito! Agilidade +2");
+    agilidade += 2;
+}
+
+// Sistema de recompensas narrativo
+if (xpLevel2 >= 100) {
+    console.log("🎲 A sabedoria acumulada se manifesta! " + nomePersonagem + " sente-se mais poderoso!");
+    nivel++;
+    experiencia = 0;
+    vidaAtual = vidaMaxima; // Vida restaurada
+} else {
+    console.log("📊 " + nomePersonagem + " ainda busca mais conhecimento e experiência...");
+    console.log("Sabedoria atual: " + xpLevel2 + "/100");
+}
+console.log("");
+console.log("");
