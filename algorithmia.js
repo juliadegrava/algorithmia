@@ -328,3 +328,36 @@ console.log("📊 Rodada " + (i + 1) + " - Dano: " + danoRecebido[i]);
 
 console.log("⚡ Dano total causado: " + danoTotal);
 console.log("🏆 Tesouros coletados: " + tesouroColetado.length + " itens épicos!");
+
+// === EPÍLOGO: O MESTRE DOS ARRAYS ===
+console.log("");
+console.log("👑 === EPÍLOGO: " + nomePersonagem + " - CONQUISTADOR DO CASTELO ===");
+
+// Estatísticas finais da jornada
+console.log("📈 Estatísticas Finais da Aventura:");
+console.log("• Nível alcançado: " + nivel);
+console.log("• Experiência total: " + xpLevel2);
+console.log("• Vida restante: " + vidaAtual + "/" + vidaMaxima);
+console.log("• Ouro acumulado: " + ouro);
+console.log("• Itens no inventário: " + inventario.length);
+console.log("• Aliados conquistados: " + aliados.length);
+console.log("• Tesouros épicos: " + tesouroColetado.length);
+
+// === ADICIONE SUAS 10+ LINHAS ÉPICAS DE CONTINUAÇÃO AQUI ===
+console.log("");
+console.log("🌟 A LENDA CONTINUA...");
+console.log("Após conquistar o Castelo dos Arrays, " + nomePersonagem + " emergiu transformado.");
+console.log("O domínio sobre as coleções arcanas fluía em suas veias como magia pura.");
+console.log("Cada loop executado havia forjado sua mente em algoritmos de ferro e determinação.");
+console.log("Os arrays sussurravam segredos ancestrais, revelando padrões ocultos da realidade.");
+console.log("Aliados admiravam sua capacidade de organizar caos em estruturas harmoniosas.");
+console.log("O inventário repleto de artefatos místicos brilhava com poder recém-descoberto.");
+console.log("Mas no horizonte, novas aventuras aguardavam o Mestre dos Códigos Arcanos.");
+console.log("Rumores falavam de torres onde funções aguardavam para serem dominadas.");
+console.log("E objetos legendários que guardariam os segredos da programação orientada.");
+console.log("A jornada estava longe do fim - era apenas o início de uma saga maior.");
+console.log("Pois " + nomePersonagem + " havia provado ser digno do título supremo:");
+console.log("⚡ ARQUI-MAGO DOS ALGORITMOS ETERNOS ⚡");
+
+console.log("");
+console.log("🎯 FIM DO NÍVEL 3 | AGUARDE FUTURAS AVENTURAS NA ACADEMIA DOS CÓDIGOS! 🎯");
