@@ -201,11 +201,130 @@ console.log("");
 // Inventário mágico - primeira coleção arcana
 
 let inventario = ["Poção de Vida", "Shadow Scepter", "Armadura Shawmor"];
-let aliados = ["Samurai Hiro", "Ninja Slade", "Espírito Guardião Freya"];
+let aliados = ["Espírito Guardião Freya", "Samurai Hiro", "Ninja Slade"];
 let inimigosEncontrados = ["Troll Caçador", "Goblin Berserker", "Orc de Gelo"];
 let salasCastelo = ["Biblioteca Arcana", "Armadilha de Cristal", "Torre do Tempo"];
-let tesouroColetado = [];
+let tesouroColetado = ["Banjo Mágico"];
 
 console.log("🏰 === " + nomePersonagem + " ADENTRA O CASTELO DOS ARRAYS ===");
 console.log("Após as vitórias dos níveis anteriores, nosso herói chegou ao castelo lendário...");
 console.log("Inventário inicial: " + inventario.length + " itens mágicos");
+
+// === CAPÍTULO 1: DESCOBERTA DAS COLEÇÕES ARCANAS ===
+console.log("");
+console.log("🗝️ CAPÍTULO 1: Os Baús Arcanos do Castelo");
+
+// 3.5.1. Declaração e inicialização
+let pocoesEncontradas = ["Cura Maior", "Força Titânica", "Invisibilidade"];
+let armadilhasAtiradas = ["Bola de Fogo"]; // Array vazio - será preenchido na aventura
+
+// 3.5.2. Acesso e modificação de elementos
+console.log("🧪 Primeira poção encontrada: " + pocoesEncontradas[0]);
+console.log("⚗️ Total de poções mágicas: " + pocoesEncontradas.length);
+
+// Modificando elemento específico
+inventario[0] = "Poção de Vida Suprema"; // Upgrade da poção!
+console.log("✨ " + nomePersonagem + " aprimorou uma poção!");
+
+// 3.5.3. Métodos de array fundamentais
+inventario.push("Anel de Proteção"); // Adiciona no final
+console.log("💍 Novo item adicionado! Inventário: " + inventario);
+
+let itemRemovido = inventario.pop(); // Remove do final
+console.log("📤 Item removido: " + itemRemovido);
+console.log("🎒 Inventário atual: " + inventario);
+
+// === CAPÍTULO 2: O RITUAL DA EXPLORAÇÃO ===
+console.log("");
+console.log("⚔️ CAPÍTULO 2: Explorando as Masmorras Sistemáticas");
+
+// Explorando cada sala do castelo usando for tradicional
+console.log("🗺️ Começando exploração das " + salasCastelo.length + " salas místicas...");
+
+for (let i = 0; i < salasCastelo.length; i++) {
+console.log("🚪 Sala " + (i + 1) + ": " + salasCastelo[i]);
+
+// Lógica diferente para cada sala baseada no índice
+if (i === 0) {
+console.log("📚 " + nomePersonagem + " encontra Grimório da Bruxa Branca!");
+xpLevel2 += 50;
+} else if (i === 1) {
+console.log("💎 Cristais brilhantes concedem poder mágico!");
+tesouroColetado.push("Cristal de Poder");
+} else {
+console.log("⏰ O tempo distorce ao redor de " + nomePersonagem + "!");
+vidaAtual -= 10; // Pequeno dano temporal
+}
+}
+
+console.log("📊 Exploração completa! XP: " + xpLevel2 + " | Vida: " + vidaAtual);
+
+// === CAPÍTULO 3: A UNIÃO DOS ALIADOS ===
+console.log("");
+console.log("🤝 CAPÍTULO 3: Reunindo os Aliados Arcanos");
+
+// Recrutando aliados com for tradicional
+console.log("🏹 " + nomePersonagem + " convoca seus aliados para a batalha final:");
+
+for (let i = 0; i < aliados.length; i++) {
+let aliado = aliados[i];
+console.log("⚡ Aliado " + (i + 1) + ": " + aliado + " se junta à missão!");
+
+// Cada posição no array determina habilidade especial
+if (i === 0) { // Primeiro aliado - Líder mágico
+console.log("🔮 Como líder mágico, " + aliado + " multiplica o poder da equipe!");
+ouro += 50;
+} else if (i === 1) { // Segundo aliado - Defensor
+console.log("🛡️ Como defensor principal, " + aliado + " fortalece a resistência!");
+vidaMaxima += 30;
+} else { // Demais aliados - Especialistas
+console.log("🏹 Como especialista, " + aliado + " aprimora táticas de combate!");
+xpLevel2 += 40;
+}
+}
+
+console.log("🎖️ Equipe completa! Ouro: " + ouro + " | Vida máxima: " + vidaMaxima);
+
+// === CAPÍTULO 4: A BATALHA FINAL DOS ARRAYS ===
+console.log("");
+console.log("🐉 CAPÍTULO 4: Confronto com as Criaturas do Castelo");
+
+// Sistema de batalha usando arrays e for tradicional
+let inimigosBatalha = ["Guardião de Cristal", "Senhor das Sombras", "Dragão dos Arrays"];
+let danoRecebido = [];
+
+console.log("💀 " + nomePersonagem + " enfrenta " + inimigosBatalha.length + " inimigos épicos!");
+
+// Batalha usando for tradicional para controle preciso
+for (let i = 0; i < inimigosBatalha.length; i++) {
+let inimigo = inimigosBatalha[i];
+let dano = Math.floor(Math.random() * 30) + 10; // Dano entre 10 e 39
+
+console.log("⚔️ Rodada " + (i + 1) + " - Enfrentando: " + inimigo);
+console.log("💥 " + nomePersonagem + " causa " + dano + " de dano!");
+
+danoRecebido.push(dano); // Armazena dano para cálculos posteriores
+
+// Lógica especial para cada rodada baseada no índice
+if (i === 0) {
+console.log("💎 Primeira vitória! Cristais fragmentados concedem bônus!");
+tesouroColetado.push("Fragmento de Cristal");
+} else if (i === 1) {
+console.log("🌑 Segunda batalha! As sombras drenam energia, mas " + nomePersonagem + " resiste!");
+vidaAtual -= 15;
+} else {
+console.log("🔥 Batalha final! O dragão recua! Vitória épica alcançada!");
+xpLevel2 += 100;
+tesouroColetado.push("Escama Dragônica");
+}
+}
+
+// Calculando estatísticas da batalha usando for tradicional
+let danoTotal = 0;
+for (let i = 0; i < danoRecebido.length; i++) {
+danoTotal += danoRecebido[i];
+console.log("📊 Rodada " + (i + 1) + " - Dano: " + danoRecebido[i]);
+}
+
+console.log("⚡ Dano total causado: " + danoTotal);
+console.log("🏆 Tesouros coletados: " + tesouroColetado.length + " itens épicos!");
